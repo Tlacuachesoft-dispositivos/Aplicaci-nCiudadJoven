@@ -36,10 +36,10 @@
         <title>Hello World</title>
 	<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDKdAxdeEnx-6plCFuKW2hlrUACfHbcZcc"></script>
 	<script>
-	var myCenter;/*=/*new google.maps.LatLng(19.32164817014775,-99.18515840000003);*/
+	var myCenter=new google.maps.LatLng(19.32164817014775,-99.18515840000003);
 	var marker;
 
-	function grabMyPosition() {
+	/*function grabMyPosition() {
     		if (navigator.geolocation) {
 		        navigator.geolocation.getCurrentPosition(centerMe);
 		} else {
@@ -54,8 +54,8 @@
 
     map.setCenter(myCenter);
     // or
-   // map.panTo(myCenter);
-}
+    map.panTo(myCenter);
+}*/
 	function initialize() {
 	  var mapProp = {
 	    center:myCenter,
